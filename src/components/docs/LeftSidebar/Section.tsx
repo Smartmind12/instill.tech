@@ -56,7 +56,12 @@ export const Section = ({ text, items, collapsible, link }: SectionProps) => {
           sectionIsCollapsable ? { "mb-4": !collapsed } : ""
         )}
       >
-        <h2 className="my-auto flex-1 text-sm font-semibold text-black dark:text-instillGrey15">
+        <h2
+          className={cn(
+            "my-auto flex-1 text-sm font-semibold text-black dark:text-instillGrey15",
+            link ? "hover:text-instillBlue50" : ""
+          )}
+        >
           {t(text)}
         </h2>
         {sectionIsCollapsable ? (
