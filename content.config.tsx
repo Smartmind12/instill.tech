@@ -7,7 +7,7 @@ import {
   Logos,
   Icons,
 } from "@instill-ai/design-system";
-import { VERSIONS } from "./version.mjs";
+import { LATEST_VERSIONS } from "./version.mjs";
 
 const SITE = {
   title: "Documentation",
@@ -558,7 +558,7 @@ export function getNavbar(
         items: [
           {
             key: "docs-nav-core-welcome",
-            to: `/docs/core/${appVersion}/welcome`,
+            to: `/docs/core/${LATEST_VERSIONS["core"]}/welcome`,
             className: "",
             position: "right",
             label: "common:navbar.instillCore",
@@ -566,7 +566,7 @@ export function getNavbar(
           },
           {
             key: "docs-nav-base-welcome",
-            to: `/docs/base/${appVersion}/welcome`,
+            to: `/docs/base/${LATEST_VERSIONS["base"]}/welcome`,
             className: "",
             position: "right",
             label: "common:navbar.instillBase",
@@ -574,7 +574,7 @@ export function getNavbar(
           },
           {
             key: "docs-nav-vdp-welcome",
-            to: `/docs/vdp/${appVersion}/welcome`,
+            to: `/docs/vdp/${LATEST_VERSIONS["vdp"]}/welcome`,
             className: "",
             position: "right",
             label: "common:navbar.instillVDP",
@@ -582,7 +582,7 @@ export function getNavbar(
           },
           {
             key: "docs-nav-model-welcome",
-            to: `/docs/model/${appVersion}/welcome`,
+            to: `/docs/model/${LATEST_VERSIONS["model"]}/welcome`,
             className: "",
             position: "right",
             label: "common:navbar.instillModel",
@@ -593,7 +593,7 @@ export function getNavbar(
       },
       {
         key: "docs-nav-cloud-welcome",
-        to: `/docs/cloud/${appVersion}/welcome`,
+        to: `/docs/cloud/${LATEST_VERSIONS["cloud"]}/welcome`,
         className: "",
         position: "left",
         label: "common:navbar.instillCloud",
@@ -601,11 +601,11 @@ export function getNavbar(
       },
       {
         key: "docs-nav-sdk",
-        to: `/docs/sdk/${VERSIONS[appType]}/welcome`,
+        to: `/docs/sdk/${LATEST_VERSIONS["sdk"]}/welcome`,
         className: "",
         position: "left",
         label: "SDK",
-        appType: null,
+        appType: "sdk",
       },
       {
         key: "docs-nav-dropdown-menu",
@@ -779,7 +779,7 @@ export function getNavbar(
         className: "navbar-dropdown-menu",
         position: "right",
         label: `${appVersion} ${
-          appVersion === VERSIONS[appType] ? "(latest)" : ""
+          appVersion === LATEST_VERSIONS[appType] ? "(latest)" : ""
         }`,
         // iconElement: (
         //   <Icons.ChevronDown className="navbar-dropdown-menu my-auto h-5 w-5 stroke-instillGrey95 hover:stroke-instillBlue50 dark:stroke-instillGrey15 dark:hover:stroke-instillBlue50" />
@@ -787,7 +787,7 @@ export function getNavbar(
         items: [
           {
             key: "docs-nav-dropdown-version-cloud-latest",
-            to: `/docs/cloud/${appVersion}/welcome`,
+            to: `/docs/cloud/${LATEST_VERSIONS["cloud"]}/welcome`,
             className: "",
             position: "right",
             label: "latest",
@@ -795,7 +795,7 @@ export function getNavbar(
           },
           {
             key: "docs-nav-dropdown-version-core-latest",
-            to: `/docs/core/${appVersion}/welcome`,
+            to: `/docs/core/${LATEST_VERSIONS["core"]}/welcome`,
             className: "",
             position: "right",
             label: "latest",
@@ -803,7 +803,7 @@ export function getNavbar(
           },
           {
             key: "docs-nav-dropdown-version-core-latest",
-            to: `/docs/model/${appVersion}/welcome`,
+            to: `/docs/model/${LATEST_VERSIONS["model"]}/welcome`,
             className: "",
             position: "right",
             label: "latest",
@@ -811,7 +811,7 @@ export function getNavbar(
           },
           {
             key: "docs-nav-dropdown-version-core-latest",
-            to: `/docs/base/${appVersion}/welcome`,
+            to: `/docs/base/${LATEST_VERSIONS["base"]}/welcome`,
             className: "",
             position: "right",
             label: "latest",
@@ -819,7 +819,7 @@ export function getNavbar(
           },
           {
             key: "docs-nav-dropdown-version-core-latest",
-            to: `/docs/vdp/${appVersion}/welcome`,
+            to: `/docs/vdp/${LATEST_VERSIONS["vdp"]}/welcome`,
             className: "",
             position: "right",
             label: "latest",
@@ -827,7 +827,7 @@ export function getNavbar(
           },
           {
             key: "docs-nav-dropdown-version-sdk-latest",
-            to: `/docs/sdk/${appVersion}/welcome`,
+            to: `/docs/sdk/${LATEST_VERSIONS["sdk"]}/welcome`,
             className: "",
             position: "right",
             label: "latest",

@@ -1,4 +1,4 @@
-export const VERSIONS = {
+export const LATEST_VERSIONS = {
   vdp: "v1.0.0",
   base: "v1.0.0",
   model: "v1.0.0",
