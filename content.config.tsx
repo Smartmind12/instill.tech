@@ -802,7 +802,7 @@ export function getNavbar(
             appType: "core",
           },
           {
-            key: "docs-nav-dropdown-version-core-latest",
+            key: "docs-nav-dropdown-version-model-latest",
             to: `/docs/model/${LATEST_VERSIONS["model"]}/welcome`,
             className: "",
             position: "right",
@@ -810,7 +810,7 @@ export function getNavbar(
             appType: "model",
           },
           {
-            key: "docs-nav-dropdown-version-core-latest",
+            key: "docs-nav-dropdown-version-base-latest",
             to: `/docs/base/${LATEST_VERSIONS["base"]}/welcome`,
             className: "",
             position: "right",
@@ -818,7 +818,7 @@ export function getNavbar(
             appType: "base",
           },
           {
-            key: "docs-nav-dropdown-version-core-latest",
+            key: "docs-nav-dropdown-version-vdp-latest",
             to: `/docs/vdp/${LATEST_VERSIONS["vdp"]}/welcome`,
             className: "",
             position: "right",
