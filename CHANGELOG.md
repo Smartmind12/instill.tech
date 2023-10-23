@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.41.5](https://github.com/instill-ai/instill.tech/compare/v1.41.4...v1.41.5) (2023-10-23)
+
+
+### Documentation
+
+* **blog:** create a blog post for closing hacktoberfest ([#636](https://github.com/instill-ai/instill.tech/issues/636)) ([f85c7bb](https://github.com/instill-ai/instill.tech/commit/f85c7bb24f657efd065d3fa6f30fc8ca89b81cd1))
+
 ## [1.41.4](https://github.com/instill-ai/instill.tech/compare/v1.41.3...v1.41.4) (2023-10-20)
 
 
